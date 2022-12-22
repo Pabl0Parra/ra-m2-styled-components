@@ -25,10 +25,10 @@ const FirstCardHouseBody = styled(FlexBox)`
   }
 `
 
-function FirstCardHouse({ image, name, text }) {
+function FirstCardHouse({ img, name, text }) {
   return (
     <Card>
-      <HouseImage src={image} alt={name} />
+      <HouseImage src={img} alt={name} />
       <FirstCardHouseBody>
         <Title text={name} />
         <Text>{text}</Text>
@@ -38,7 +38,7 @@ function FirstCardHouse({ image, name, text }) {
 }
 
 FirstCardHouse.propTypes = {
-  image: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }
