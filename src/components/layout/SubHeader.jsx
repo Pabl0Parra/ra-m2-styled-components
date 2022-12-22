@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FlexBox } from '../../styles'
 
-const SubHeaderStyled = styled(FlexBox)`
+const StyledSubHeader = styled(FlexBox)`
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2em;
@@ -16,7 +16,7 @@ const SubHeaderStyled = styled(FlexBox)`
 `
 
 function SubHeader({ ...props }) {
-  return <SubHeaderStyled {...props}>Subheader</SubHeaderStyled>
+  return <StyledSubHeader {...props}>Subheader</StyledSubHeader>
 }
 
 export default styled(SubHeader)``
