@@ -10,7 +10,7 @@ const HeaderStyled = styled(FlexBox)`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
-      <div>MIPISO.com</div>
+      <div>MIPISO.com.es</div>
       <div>
         <ul>
           <li>Buscador</li>
