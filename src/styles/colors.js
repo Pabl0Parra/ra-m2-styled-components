@@ -1,6 +1,7 @@
-const colors = {
+export const colors = {
   main: '#FF0000',
   secondary: '#0088CC',
+  black: '#000000',
   lightBlue: '#ADD8E6',
   darkBlue: '#0073E6',
   lightGreen: '#AEDEC1',
