@@ -11,7 +11,7 @@ const HouseImage = styled.img`
   border-radius: 5px;
   object-fit: cover;
 `
-const FirstCardHouseBody = styled(FlexBox)`
+const FirstHouseCardBody = styled(FlexBox)`
   width: 100%;
   padding: 10px;
   flex-direction: row;
@@ -25,22 +25,22 @@ const FirstCardHouseBody = styled(FlexBox)`
   }
 `
 
-function FirstCardHouse({ img, name, text }) {
+function FirstHouseCard({ img, name, text }) {
   return (
     <Card>
       <HouseImage src={img} alt={name} />
-      <FirstCardHouseBody>
+      <FirstHouseCardBody>
         <Title text={name} />
         <Text>{text}</Text>
-      </FirstCardHouseBody>
+      </FirstHouseCardBody>
     </Card>
   )
 }
 
-FirstCardHouse.propTypes = {
+FirstHouseCard.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }
 
-export default FirstCardHouse
+export default FirstHouseCard
