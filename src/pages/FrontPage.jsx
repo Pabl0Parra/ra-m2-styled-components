@@ -1,3 +1,5 @@
+/* eslint-disable import/named */
+import React from 'react'
 import styled from 'styled-components'
 import { Body } from '../components/layout'
 import { colors, dimensions, FlexBox } from '../styles/index'
