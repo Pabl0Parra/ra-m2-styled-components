@@ -7,7 +7,7 @@ export const colors = {
   lightGreen: '#AEDEC1',
   purple: '#8A82AF',
   transparent: 'rgb(0,0,0,0)',
-  red: '#d80202',
+  gray: '#808080',
   font: {
     base: '#6d6d6d',
     headings: '#a53636',
