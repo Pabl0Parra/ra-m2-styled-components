@@ -1,17 +1,15 @@
-import { Text } from './components/atoms'
-import { Body } from './components/layout'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { FrontPage, Data, Profile } from './pages/index'
 
 function App() {
   return (
-    <Body>
-      <Text as="h1">Hola a todos</Text>
-      <Text>Buenas tardes</Text>
-      <ul>
-        <Text as="li">A</Text>
-        <Text as="li">B</Text>
-        <Text as="li">C</Text>
-      </ul>
-    </Body>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<FrontPage />} />
+        <Route path="/data" element={<Data />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
