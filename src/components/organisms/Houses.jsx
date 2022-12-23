@@ -1,0 +1,26 @@
+import styled from 'styled-components'
+import { colors, FlexBox, Grid } from '../../styles'
+import { Button } from '../atoms'
+import { FirstHouseCard, HouseCard } from '../molecules'
+import HOUSES from '../../../houses-data'
+
+const ButtonContainer = styled(FlexBox)`
+  margin-top: 1.5rem;
+`
+function Houses() {
+  return (
+    <FlexBox>
+      <Grid>
+        <FirstHouseCard />
+        {HOUSES.map((card) => (
+          <HouseCard key={card.id} {...card} />
+        ))}
+      </Grid>
+      <ButtonContainer direction="row" justify="center">
+        <Button backgroundColor={colors.secondary}>Cargar más</Button>
+      </ButtonContainer>
+    </FlexBox>
+  )
+}
+
+export default Houses

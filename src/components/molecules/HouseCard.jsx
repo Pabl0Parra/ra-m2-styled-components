@@ -33,7 +33,7 @@ function HouseCard({ img, name, text, price }) {
         </Title>
         <FlexBox direction="row" justify="space-between" align="center">
           <Text color={colors.black} fontSize={dimensions.sm} fontWeight="bold">
-            {price}
+            <span>{price}€</span>
           </Text>
           <Button
             text="Localizar"
