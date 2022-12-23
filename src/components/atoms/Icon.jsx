@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 import { colors } from '../../styles'
 
 const StyledIcon = styled.span`
-    font-variation-settings: "FILL" ${(props) => props.fill}, "wght" ${(
+    font-variation-settings: 'FILL' ${(props) => props.fill}, 'wght' ${(
   props,
-) => props.wght}, "GRAD" ${(props) => props.grad}, "opsz" ${(props) =>
-  props.opsz};
+) => props.wght},
+    'GRAD' ${(props) => props.grad}, 'opsz' ${(props) => props.opsz};
     color: ${(props) => props.color} 
     font-size: ${(props) => props.size}px
     border-radius: ${(props) => props.borderRadius}px
