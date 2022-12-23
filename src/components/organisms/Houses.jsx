@@ -23,4 +23,4 @@ function Houses() {
   )
 }
 
-export default Houses
+export default styled(Houses)``
