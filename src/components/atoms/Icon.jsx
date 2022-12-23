@@ -47,8 +47,8 @@ function Icon({
 }
 
 Icon.propTypes = {
-  name: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired,
+  name: PropTypes.string,
+  size: PropTypes.number,
   fill: PropTypes.number,
   wght: PropTypes.number,
   grad: PropTypes.number,

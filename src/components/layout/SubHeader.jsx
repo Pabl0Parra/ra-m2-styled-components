@@ -7,7 +7,7 @@ const StyledSubHeader = styled(FlexBox)`
   background-color: ${colors.superLightBlue}}
   padding: ${dimensions.base} ${dimensions.xxl}
   border: 1px solid ${colors.turquoise}
-  gap: ${dimensions.gap.base}  
+  gap: ${dimensions.base}  
 `
 
 function SubHeader({ ...props }) {

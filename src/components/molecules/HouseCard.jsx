@@ -51,10 +51,10 @@ function HouseCard({ img, name, text, price }) {
 }
 
 HouseCard.propTypes = {
-  img: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  img: PropTypes.string,
+  name: PropTypes.string,
+  text: PropTypes.string,
+  price: PropTypes.number,
 }
 
 export default styled(HouseCard)``

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors, dimensions } from '../../styles'
+import { colors, dimensions } from '../../styles/index'
 
 const StyledInputText = styled.input`
     height: ${(props) => props.height || '2.5rem'}
     width: ${(props) => props.width || '22.5rem'}
-    padding: ${dimensions.padding.xss}
+    padding: ${dimensions.xss}
     border: 1px solid ${colors.gray}}
     border-radius: ${dimensions.xs}
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32)
@@ -37,10 +37,10 @@ function InputText({ id, name, text, onChange }) {
 }
 
 InputText.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  text: PropTypes.string,
+  onChange: PropTypes.func,
 }
 
 export default styled(InputText)``

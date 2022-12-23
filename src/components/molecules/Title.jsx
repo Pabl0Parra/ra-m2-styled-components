@@ -21,10 +21,10 @@ function Title(
 }
 
 Title.propTypes = {
-  text: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  fontWeight: PropTypes.number.isRequired,
-  element: PropTypes.string.isRequired,
+  text: PropTypes.string,
+  color: PropTypes.string,
+  fontWeight: PropTypes.number,
+  element: PropTypes.string,
 }
 
 export default styled(Title)``

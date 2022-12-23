@@ -38,9 +38,9 @@ function FirstHouseCard({ img, name, text }) {
 }
 
 FirstHouseCard.propTypes = {
-  img: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  name: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default FirstHouseCard
