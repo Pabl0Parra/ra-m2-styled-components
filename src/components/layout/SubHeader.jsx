@@ -1,22 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexBox } from '../../styles'
+import { colors, dimensions, FlexBox } from '../../styles'
+import { SearchBar } from '../molecules/index'
 
 const StyledSubHeader = styled(FlexBox)`
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: lightblue;
-
-  &:hover {
-    background-color: ${(props) =>
-      props.hoverColor ? props.hoverColor : 'lightgreen'};
-  }
+  background-color: ${colors.superLightBlue}}
+  padding-top: ${dimensions.padding.base}
+  padding-bottom: ${dimensions.padding.base}
+  padding-left: ${dimensions.padding.xxl}
+  padding-right: ${dimensions.padding.xxl}  
+  border: 1px solid ${colors.turquoise}
+  gap: ${dimensions.gap.base}  
 `
 
 function SubHeader({ ...props }) {
-  return <StyledSubHeader {...props}>Subheader</StyledSubHeader>
+  return (
+    <StyledSubHeader {...props} direction="row">
+      <SearchBar />
+    </StyledSubHeader>
+  )
 }
 
 export default styled(SubHeader)``
