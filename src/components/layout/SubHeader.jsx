@@ -5,10 +5,7 @@ import { SearchBar } from '../molecules/index'
 
 const StyledSubHeader = styled(FlexBox)`
   background-color: ${colors.superLightBlue}}
-  padding-top: ${dimensions.padding.base}
-  padding-bottom: ${dimensions.padding.base}
-  padding-left: ${dimensions.padding.xxl}
-  padding-right: ${dimensions.padding.xxl}  
+  padding: ${dimensions.base} ${dimensions.xxl}
   border: 1px solid ${colors.turquoise}
   gap: ${dimensions.gap.base}  
 `
