@@ -1,3 +1,4 @@
+import React from 'react'
 import { InputText, Icon, Button } from '../atoms/index'
 
 function SearchBar() {

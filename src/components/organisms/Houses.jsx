@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import { colors, FlexBox, Grid } from '../../styles'
 import { Button } from '../atoms'
@@ -13,7 +14,7 @@ function Houses() {
       <Grid>
         <FirstHouseCard />
         {HOUSES.map((card) => (
-          <HouseCard key={card.id} {...card} />
+          <HouseCard key={card.id} title={card.title} price={card.price} />
         ))}
       </Grid>
       <ButtonContainer direction="row" justify="center">
