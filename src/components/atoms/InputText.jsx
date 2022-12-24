@@ -1,14 +1,17 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import { colors } from '../../styles/colors'
 
 const StyledInput = styled.input`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 1px solid ${colors.gray};
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
   padding-left: 0.8rem;
+
+  
 }
 `
 
