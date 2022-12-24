@@ -1,23 +1,22 @@
-import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors } from '../../styles'
+import { colors } from '../../styles/index'
 
-const StyledIcon = styled.span`
-    font-variation-settings: 'FILL' ${(props) => props.fill}, 'wght' ${(
-  props,
-) => props.wght},
-    'GRAD' ${(props) => props.grad}, 'opsz' ${(props) => props.opsz};
-    color: ${(props) => props.color} 
-    font-size: ${(props) => props.size}px
-    border-radius: ${(props) => props.borderRadius}px
-    background: ${(props) => props.background}
-    width: ${({ width }) => width || '1.5rem'};
-    height: ${({ height }) => height || '1.5rem'};
-    padding: ${({ padding }) => padding || '5px'};
-    text-align: ${({ textAlign }) => textAlign || 'center'};
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+const IconStyled = styled.span`
+  font-variation-settings: 'FILL' ${(props) => props.fill},
+    'wght' ${(props) => props.wght}, 'GRAD' ${(props) => props.grad},
+    'opsz' ${(props) => props.opsz};
+  color: ${(props) => props.color};
+  font-size: ${(props) => props.size}px;
+  background: ${(props) => props.background};
+  border-radius: ${(props) => props.borderRadius}px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
 `
+
 function Icon({
   name,
   size = 24,
@@ -26,37 +25,37 @@ function Icon({
   grad = 0,
   opsz = 48,
   color = colors.font.white,
-  borderRadius = 6,
-  background = 'rgb(70,193,247)',
+  borderRadius = 5,
+  background = 'linear-gradient(135deg, #46C1F7 0%, #0073E6 100%) ',
   className = '',
 }) {
   return (
-    <StyledIcon
-      size={size}
+    <IconStyled
+      className={`material-symbols-outlined ${className}`}
       fill={fill}
       wght={wght}
       grad={grad}
       opsz={opsz}
+      size={size}
       color={color}
       borderRadius={borderRadius}
       background={background}
-      className={`material-symbols-outlined ${className}`}
     >
       {name}
-    </StyledIcon>
+    </IconStyled>
   )
 }
 
 Icon.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   size: PropTypes.number,
+  color: PropTypes.string,
+  background: PropTypes.string,
+  borderRadius: PropTypes.number,
   fill: PropTypes.number,
   wght: PropTypes.number,
   grad: PropTypes.number,
   opsz: PropTypes.number,
-  color: PropTypes.string,
-  background: PropTypes.string,
-  borderRadius: PropTypes.number,
   className: PropTypes.string,
 }
 

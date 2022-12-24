@@ -1,47 +1,33 @@
-/* eslint-disable no-undef */
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { colors, dimensions, FlexBox } from '../../styles'
+import { colors, dimensions } from '../../styles/index'
 import { Text, Card } from '../atoms/index'
-import { Title } from './index'
+import houseImage from '../../assets/images/poolHouse.jpg'
 
-const HouseImage = styled.img`
+const ContainerImg = styled.div`
   height: 100%;
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-`
-const FirstHouseCardBody = styled(FlexBox)`
-  width: 100%;
-  padding: 10px;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   ${Text} {
+    width: 10em;
+    padding: 5px 8px;
+    font-size: ${dimensions.xl};
     color: ${colors.font.white};
-    font-size: ${dimensions.font.base};
-    font-weight: bold;
+    position: absolute;
   }
 `
 
-function FirstHouseCard({ img, name, text }) {
+export default function CardCover() {
   return (
     <Card>
-      <HouseImage src={img} alt={name} />
-      <FirstHouseCardBody>
-        <Title text={name} />
-        <Text>{text}</Text>
-      </FirstHouseCardBody>
+      <ContainerImg>
+        <Text as="span">Piso en Barcelona, Grac... 939.000€</Text>
+        <img src={houseImage} alt="pool house" />
+      </ContainerImg>
     </Card>
   )
 }
-
-FirstHouseCard.propTypes = {
-  img: PropTypes.string,
-  name: PropTypes.string,
-  text: PropTypes.string,
-}
-
-export default FirstHouseCard

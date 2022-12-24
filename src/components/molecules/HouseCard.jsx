@@ -1,61 +1,53 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors, dimensions, FlexBox } from '../../styles'
-import { Text, Button, Card } from '../atoms/index'
-import { Title } from './index'
+import styled from 'styled-components'
+import { Button, Text, Card } from '../atoms/index'
+import { colors, FlexBox } from '../../styles/index'
+import houseImage from '../../assets/images/poolHouse.jpg'
 
-const HouseImage = styled.img`
-  height: 56%;
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-`
-
-const HouseCardBody = styled(FlexBox)`
-  padding: 0.4rem;
-
-  ${Text} {
-    opacity: 0.8;
+const StyledHouseCard = styled(Card)`
+  img {
+    width: 12.5rem;
+    height: 61%;
+    border-radius: 8px;
   }
 `
-function HouseCard({ img, name, text, price }) {
+const Price = styled(Text).attrs({
+  as: 'span',
+})`
+  font-weight: bold;
+  font-size: 16px;
+`
+const Address = styled(Text).attrs({
+  as: 'span',
+})`
+  padding: 0px 13px;
+  font-size: 14px;
+  color: ${colors.gray};
+`
+const Wrapper = styled(FlexBox)`
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 18px;
+`
+
+function HouseCard({ address, price }) {
   return (
-    <Card>
-      <HouseImage src={img} alt={name} />
-      <HouseCardBody>
-        <Title
-          as="h1"
-          fontSize={`${dimensions.sm}`}
-          text={name}
-          color={`${colors.font.base}`}
-        >
-          {text}
-        </Title>
-        <FlexBox direction="row" justify="space-between" align="center">
-          <Text color={colors.black} fontSize={dimensions.sm} fontWeight="bold">
-            <span>{price}€</span>
-          </Text>
-          <Button
-            text="Localizar"
-            fontSize={dimensions.sm}
-            buttonStyles={{
-              height: '50%',
-              width: '45%',
-              backgroundColor: `${colors.main}`,
-            }}
-          />
-        </FlexBox>
-      </HouseCardBody>
-    </Card>
+    <StyledHouseCard>
+      <img src={houseImage} alt="pool house" />
+      <div style={{ marginTop: '10px' }}>
+        <Address>{address}</Address>
+        <Wrapper direction="row">
+          <Price>{price}</Price>
+          <Button backgroundColor={colors.purple}>Localizar</Button>
+        </Wrapper>
+      </div>
+    </StyledHouseCard>
   )
 }
 
 HouseCard.propTypes = {
-  img: PropTypes.string,
-  name: PropTypes.string,
-  text: PropTypes.string,
-  price: PropTypes.number,
+  address: PropTypes.string,
+  price: PropTypes.string,
 }
-
 export default styled(HouseCard)``

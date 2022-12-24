@@ -1,47 +1,26 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors, dimensions } from '../../styles/index'
+import styled from 'styled-components'
 
-const StyledInputText = styled.input`
-    height: ${(props) => props.height || '2.5rem'}
-    width: ${(props) => props.width || '22.5rem'}
-    padding: ${dimensions.xss}
-    border: 1px solid ${colors.gray}}
-    border-radius: ${dimensions.xs}
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32)
-
-    &::placeholder {
-        color: ${colors.font.base}
-    }
-
-    &:hover {
-        border: 1px solid ${colors.main};
-      }
-
-    &:focus {
-        outline: none;
-        border: 1px solid ${colors.lightBlue};
-    }
+const StyledInput = styled.input`
+  height: ${(props) => props.height};
+  width: ${(props) => props.width};
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
+  padding-left: 0.8rem;
+}
 `
 
-function InputText({ id, name, text, onChange }) {
+function InputText({ text, width = '21rem', height = '2.5rem' }) {
   return (
-    <StyledInputText
-      type="text"
-      id={id}
-      name={name}
-      placeholder={text}
-      onChange={onChange}
-    />
+    <StyledInput type="text" width={width} height={height} placeholder={text} />
   )
 }
 
 InputText.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string,
   text: PropTypes.string,
-  onChange: PropTypes.func,
+  width: PropTypes.number,
+  height: PropTypes.number,
 }
-
 export default styled(InputText)``

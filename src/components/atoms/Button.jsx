@@ -1,25 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors } from '../../styles'
+import { colors } from '../../styles/colors'
 
 const StyledButton = styled.button`
   background-color: ${(props) => props.backgroundColor};
-  border-radius: 5px;
-  padding: 3px 12px;
+  border-radius: 6px;
   border: none;
+  padding: 2px 10px;
 `
-
-const ButtonText = styled(Text).attrs({
+const TextButton = styled(Text).attrs({
   as: 'span',
 })`
   color: ${(props) => props.color};
   font-size: ${(props) => props.fontSize}px;
+  padding: ${(props) => props.padding}px;
 `
 
-function Button({
+export default function Button({
   children,
-  color = colors.main,
+  color = colors.font.white,
   fontSize = 14,
   backgroundColor,
   onClick = () => {},
@@ -30,19 +30,17 @@ function Button({
       onClick={onClick}
       backgroundColor={backgroundColor}
     >
-      <ButtonText fontSize={fontSize} color={color}>
+      <TextButton fontSize={fontSize} color={color}>
         {children}
-      </ButtonText>
+      </TextButton>
     </StyledButton>
   )
 }
 
 Button.propTypes = {
-  fontSize: PropTypes.number,
+  children: PropTypes.node.isRequired,
   color: PropTypes.string,
-  children: PropTypes.node,
+  fontSize: PropTypes.number,
   backgroundColor: PropTypes.string,
   onClick: PropTypes.func,
 }
-
-export default styled(Button)``

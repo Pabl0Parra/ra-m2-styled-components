@@ -1,12 +1,10 @@
 import React from 'react'
 import { Body } from '../components/layout/index'
 
-function Profile() {
+export default function Profile() {
   return (
     <Body>
-      <h5>Mi perfil</h5>
+      <h4>Mi perfil</h4>
     </Body>
   )
 }
-
-export default Profile

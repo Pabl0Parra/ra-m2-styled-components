@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unused-prop-types */
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -6,14 +5,15 @@ import { Text } from '../atoms'
 import { colors } from '../../styles'
 
 const StyledTitle = styled(Text)`
-  padding: ${({ padding }) => padding};
+  font-weight: ${(props) => props.fontWeight};
 `
-function Title(
+
+function Title({
+  element = 'h1',
   text,
   color = colors.font.base,
-  fontWeight = 500,
-  element = 'h1',
-) {
+  fontWeight = 400,
+}) {
   return (
     <StyledTitle as={element} color={color} fontWeight={fontWeight}>
       {text}
@@ -22,10 +22,9 @@ function Title(
 }
 
 Title.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  element: PropTypes.string,
   color: PropTypes.string,
   fontWeight: PropTypes.number,
-  element: PropTypes.string,
 }
-
 export default styled(Title)``

@@ -1,16 +1,14 @@
 import React from 'react'
-import { InputText, Icon, Button } from '../atoms/index'
+import { Button, Icon, InputText } from '../atoms/index'
 
-function SearchBar() {
+export default function SearchBar() {
   return (
     <>
-      <InputText placeholder="Piso, chalet o garaje..." />
-      <InputText placeholder="Madrid, Barcelona o Zaragoza..." />
+      <InputText text="Piso, chalet o garaje..." />
+      <InputText text="Madrid, Barcelona o Zaragoza..." />
       <Button>
-        <Icon name="search" size={27} />
+        <Icon size={27} name="search" />
       </Button>
     </>
   )
 }
-
-export default SearchBar
