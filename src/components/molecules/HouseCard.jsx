@@ -22,7 +22,7 @@ const Address = styled(Text).attrs({
   as: 'span',
 })`
   padding: 0px 13px;
-  font-size: 14px;
+  font-size: 15px;
   color: ${colors.gray};
 `
 const Wrapper = styled(FlexBox)`
