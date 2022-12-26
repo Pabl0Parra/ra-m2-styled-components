@@ -9,7 +9,7 @@ const StyledHouseCard = styled(Card)`
   img {
     width: 12.5rem;
     height: 61%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
   }
 `
 const Price = styled(Text).attrs({
