@@ -7,7 +7,7 @@ export default function SearchBar() {
       <InputText text="Piso, chalet o garaje..." />
       <InputText text="Madrid, Barcelona o Zaragoza..." />
       <Button>
-        <Icon size={27} name="search" />
+        <Icon size={26} name="search" />
       </Button>
     </>
   )

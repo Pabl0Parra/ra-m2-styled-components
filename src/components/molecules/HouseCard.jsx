@@ -21,7 +21,7 @@ const Price = styled(Text).attrs({
 const Title = styled(Text).attrs({
   as: 'span',
 })`
-  padding: 0px 13px;
+  padding: 0px 8px;
   font-size: 0.8rem;
   color: ${colors.gray};
 `
