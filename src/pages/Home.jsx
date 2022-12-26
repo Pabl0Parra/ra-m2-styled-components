@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Body } from '../components/layout/index'
-import { colors, FlexBox } from '../styles/index'
+import { FlexBox } from '../styles/index'
 import { Houses } from '../components/organisms/index'
 
 const StyledHomeContainer = styled(FlexBox)`
@@ -26,6 +26,7 @@ function Home() {
             margin: '1.75rem 2rem 3.3rem 2rem',
             alignItems: 'center',
             border: '1px solid black',
+            borderRadius: '0.5rem',
           }}
         >
           THIS WILL BE THE CITY MAP
