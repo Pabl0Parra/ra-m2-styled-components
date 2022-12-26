@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Body } from '../components/layout/index'
-import { colors, dimensions, FlexBox } from '../styles/index'
+import { FlexBox } from '../styles/index'
 import { Houses } from '../components/organisms/index'
 
 const StyledHomeContainer = styled(FlexBox)`
@@ -12,9 +12,7 @@ const StyledHomeContainer = styled(FlexBox)`
 `
 
 const StyledMap = styled(FlexBox)`
-    width: 45%;
-    background-color: ${colors.gray}
-    border-radius: ${dimensions.xs}      
+  width: 45%;
 `
 
 function Home() {

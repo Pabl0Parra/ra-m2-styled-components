@@ -16,18 +16,4 @@ export const colors = {
     headings: '#a53636',
     white: '#FFFFFF',
   },
-  // main: '#FF0000',
-  // secondary: '#0088CC',
-  // font: {
-  //   base: '#000444',
-  //   headings: '#121212',
-  // },
-  // icons: {
-  //   base: '#FFFFFF',
-  //   background: '#3270f7',
-  // },
-  // subHeader: {
-  //   main: '#E6F2F2',
-  //   secondary: '#A4D1D1',
-  // },
 }

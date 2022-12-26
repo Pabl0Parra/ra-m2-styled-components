@@ -18,25 +18,25 @@ const Price = styled(Text).attrs({
   font-weight: bold;
   font-size: 16px;
 `
-const Address = styled(Text).attrs({
+const Title = styled(Text).attrs({
   as: 'span',
 })`
   padding: 0px 13px;
-  font-size: 15px;
+  font-size: 0.8rem;
   color: ${colors.gray};
 `
 const Wrapper = styled(FlexBox)`
   align-items: center;
   justify-content: space-around;
-  margin-top: 18px;
+  margin-top: 1rem;
 `
 
-function HouseCard({ address, price }) {
+function HouseCard({ title, price }) {
   return (
     <StyledHouseCard>
       <img src={houseImage} alt="pool house" />
-      <div style={{ marginTop: '10px' }}>
-        <Address>{address}</Address>
+      <div style={{ marginTop: '0.625rem' }}>
+        <Title>{title}</Title>
         <Wrapper direction="row">
           <Price>{price}</Price>
           <Button backgroundColor={colors.purple}>Localizar</Button>
@@ -47,7 +47,7 @@ function HouseCard({ address, price }) {
 }
 
 HouseCard.propTypes = {
-  address: PropTypes.string,
+  title: PropTypes.string,
   price: PropTypes.string,
 }
 export default styled(HouseCard)``

@@ -4,7 +4,7 @@ export const dimensions = {
   xs: '8px',
   sm: '12px',
   base: '16px',
-  xl: '22px',
+  xl: '20px',
   xxl: '32px',
   font: {
     base: '16px',

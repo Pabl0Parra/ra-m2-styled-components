@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Grid from '../../styles/Grid'
 import { Button } from '../atoms'
 import { FirstHouseCard, HouseCard } from '../molecules/index'
-import { colors, FlexBox } from '../../styles'
+import { colors, FlexBox } from '../../styles/index'
 import HOUSES_DATA from '../../../houses-data'
 
 const ContainerButton = styled(FlexBox)`
@@ -16,7 +16,7 @@ function Houses() {
       <Grid>
         <FirstHouseCard />
         {HOUSES_DATA.map((card) => (
-          <HouseCard key={card.id} price={card.price} address={card.address} />
+          <HouseCard key={card.id} price={card.price} title={card.title} />
         ))}
       </Grid>
       <ContainerButton direction="row" justify="center">

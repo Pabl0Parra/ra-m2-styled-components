@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Text } from '../atoms'
-import { colors } from '../../styles'
+import { Text } from '../atoms/index'
+import { colors } from '../../styles/index'
 
 const StyledTitle = styled(Text)`
   font-weight: ${(props) => props.fontWeight};

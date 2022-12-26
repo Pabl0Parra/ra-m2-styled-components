@@ -10,10 +10,10 @@ const IconStyled = styled.span`
   font-size: ${(props) => props.size}px;
   background: ${(props) => props.background};
   border-radius: ${(props) => props.borderRadius}px;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
-  padding: 5px;
+  padding: 0.313rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
 `
 
