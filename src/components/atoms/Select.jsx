@@ -12,6 +12,10 @@ const StyledSelect = styled.select`
   padding-left: 0.8rem;
   appearance: none;
 
+  &:focus {
+    outline: none;
+  }
+
   option {
     color: black;
     background: white;
@@ -20,6 +24,7 @@ const StyledSelect = styled.select`
     min-height: 20px;
     padding: 0px 2px 1px;
   }
+
 }
 `
 
