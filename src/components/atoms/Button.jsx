@@ -8,6 +8,11 @@ const StyledButton = styled.button`
   border-radius: 6px;
   border: none;
   padding: 2px 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.backgroundColor};
+  }
 `
 const TextButton = styled(Text).attrs({
   as: 'span',
