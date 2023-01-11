@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FlexBox, colors } from '../../styles/index'
-import SearchBar from '../molecules/SearchBar'
+import SearchBar from '../organisms/SearchBar'
 
 const StyledSubHeader = styled(FlexBox)`
   padding-left: 1.5rem;
