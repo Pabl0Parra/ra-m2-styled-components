@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react'
 import { Button, Icon } from '../atoms/index'
 import SelectGroup from '../molecules/SelectGroup'
