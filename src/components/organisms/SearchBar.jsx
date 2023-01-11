@@ -2,19 +2,10 @@
 import React from 'react'
 import { Button, Icon } from '../atoms/index'
 import SelectGroup from '../molecules/SelectGroup'
+import rentalType from '../../../data/typeRentalsOptions-data'
+import city from '../../../data/citiesOptions-data'
 
 export default function SearchBar() {
-  const rentalType = [
-    { index: '0', property: 'Piso' },
-    { index: '1', property: 'Chalet' },
-    { index: '2', property: 'Garaje' },
-  ]
-
-  const city = [
-    { index: '0', city: 'Madrid' },
-    { index: '1', city: 'Barcelona' },
-    { index: '2', city: 'Zaragoza' },
-  ]
   return (
     <>
       <SelectGroup

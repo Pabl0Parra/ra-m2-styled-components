@@ -4,7 +4,7 @@ import Grid from '../../styles/Grid'
 import { Button } from '../atoms'
 import { FirstHouseCard, HouseCard } from '../molecules/index'
 import { colors, FlexBox } from '../../styles/index'
-import HOUSES_DATA from '../../../houses-data'
+import HOUSES_DATA from '../../../data/houses-data'
 
 const ContainerButton = styled(FlexBox)`
   margin-top: 2rem;
