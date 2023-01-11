@@ -1,9 +1,12 @@
 import React from 'react'
 import { Button, Icon, Select } from '../atoms/index'
 
+// Este componente de SearchBar debería de estar en organisms
 export default function SearchBar() {
   return (
     <>
+      {/* Intenta generalizar el search, en lugar de tener que escribir las opciones manualmente como haces, pasa un array. Imagina que tienes 50 opciones... */}
+      {/* Falta un label asociado */}
       <Select text="Piso">
         <option value="" hidden>
           Piso
