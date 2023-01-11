@@ -6,9 +6,9 @@ import { FlexBox } from '../styles/index'
 import { Houses } from '../components/organisms/index'
 
 const StyledHomeContainer = styled(FlexBox)`
-    justify-content: center
-    margin: 2rem
-    column-gap: 2.5rem
+  justify-content: center;
+  margin: 2rem;
+  column-gap: 2.5rem;
 `
 
 const StyledMap = styled(FlexBox)`

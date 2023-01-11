@@ -24,8 +24,6 @@ const StyledSelect = styled.select`
     min-height: 20px;
     padding: 0px 2px 1px;
   }
-
-}
 `
 
 function Select({ text, width = '21rem', height = '2.5rem', name, children }) {
