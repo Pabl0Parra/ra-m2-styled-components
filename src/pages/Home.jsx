@@ -7,8 +7,8 @@ import { Houses } from '../components/organisms/index'
 
 const StyledHomeContainer = styled(FlexBox)`
   justify-content: center;
-  margin-left: 1rem;
-  column-gap: 2.5rem;
+  margin-left: 0.5rem;
+  column-gap: 2rem;
 `
 
 const StyledMap = styled(FlexBox)`
@@ -23,10 +23,11 @@ function Home() {
         <StyledMap
           style={{
             justifyContent: 'center',
-            margin: '1.75rem 2rem 3.3rem 2rem',
+            margin: '1.75rem 2rem 3.3rem 0rem',
             alignItems: 'center',
             border: '1px solid black',
             borderRadius: '0.5rem',
+            boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.19)',
           }}
         >
           THIS WILL BE THE CITY MAP

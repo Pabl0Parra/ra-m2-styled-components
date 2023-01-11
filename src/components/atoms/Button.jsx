@@ -5,10 +5,9 @@ import { colors } from '../../styles/index'
 
 const StyledButton = styled.button`
   background-color: ${(props) => props.backgroundColor};
-  border-radius: 6px;
+  border-radius: 8px;
   border: none;
-  padding: 2px 10px;
-
+  padding: 5px 14px;
   &:hover {
     cursor: pointer;
     background-color: ${(props) => props.backgroundColor};

@@ -5,8 +5,9 @@ import { FlexBox, colors } from '../../styles/index'
 import { Title } from '../molecules/index'
 
 const StyledHeader = styled(FlexBox)`
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   padding-right: 2rem;
+  align-items: center;
   ul {
     list-style: none;
     column-gap: 1rem;
@@ -16,7 +17,7 @@ const StyledList = styled(FlexBox)`
   list-style: none;
   column-gap: 1rem;
   a {
-    color: ${colors.font.base};
+    color: ${colors.purple};
     text-decoration: none;
   }
 `

@@ -8,7 +8,7 @@ export const colors = {
   turquoise: '#99e5e5',
   darkBlue: '#000666',
   lightGreen: '#AEDEC1',
-  purple: '#8A82AF',
+  purple: '#8a52af',
   transparent: 'rgb(0,0,0,0)',
   gray: '#808080',
   font: {

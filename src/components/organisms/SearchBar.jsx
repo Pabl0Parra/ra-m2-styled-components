@@ -18,7 +18,7 @@ export default function SearchBar() {
         placeholder="Madrid, Barcelona o Zaragoza..."
       />
       <Button>
-        <Icon size={26} name="search" />
+        <Icon size={28} name="search" />
       </Button>
     </>
   )

@@ -21,7 +21,7 @@ function Icon({
   name,
   size = 24,
   fill = 0,
-  wght = 400,
+  wght = 600,
   grad = 0,
   opsz = 48,
   color = colors.font.white,
