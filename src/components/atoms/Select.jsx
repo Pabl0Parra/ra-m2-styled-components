@@ -26,13 +26,13 @@ const StyledSelect = styled.select`
   }
 `
 
-function Select({ text, width = '21rem', height = '2.5rem', name, children }) {
+function Select({ text, width = '21rem', height = '2.5rem', id, children }) {
   return (
     <StyledSelect
       type="text"
       width={width}
       height={height}
-      name={name}
+      name={id}
       placeholder={text}
     >
       {children}
@@ -41,10 +41,10 @@ function Select({ text, width = '21rem', height = '2.5rem', name, children }) {
 }
 
 Select.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  name: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  id: PropTypes.string,
+  children: PropTypes.node,
 }
 export default styled(Select)``
