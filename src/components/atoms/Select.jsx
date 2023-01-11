@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { colors } from '../../styles/index'
 
 const StyledSelect = styled.select`
+  color: ${colors.black};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   border-radius: 0.313rem;
@@ -16,12 +17,8 @@ const StyledSelect = styled.select`
   }
 
   option {
-    color: black;
-    background: white;
     display: flex;
     white-space: pre;
-    min-height: 20px;
-    padding: 0px 2px 1px;
   }
 `
 
