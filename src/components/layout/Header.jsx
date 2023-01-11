@@ -5,7 +5,7 @@ import { FlexBox, colors } from '../../styles/index'
 import { Title } from '../molecules/index'
 
 const StyledHeader = styled(FlexBox)`
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   padding-right: 2rem;
   ul {
     list-style: none;

@@ -7,7 +7,7 @@ import { Houses } from '../components/organisms/index'
 
 const StyledHomeContainer = styled(FlexBox)`
   justify-content: center;
-  margin: 2rem;
+  margin-left: 1rem;
   column-gap: 2.5rem;
 `
 
