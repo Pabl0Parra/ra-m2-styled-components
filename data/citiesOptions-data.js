@@ -1,7 +1,7 @@
 const city = [
-  { index: '0', city: 'Madrid' },
-  { index: '1', city: 'Barcelona' },
-  { index: '2', city: 'Zaragoza' },
+  { id: '0', value: 'Madrid' },
+  { id: '1', value: 'Barcelona' },
+  { id: '2', value: 'Zaragoza' },
 ]
 
 export default city

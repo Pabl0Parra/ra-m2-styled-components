@@ -1,7 +1,7 @@
 const rentalType = [
-  { index: '0', property: 'Piso' },
-  { index: '1', property: 'Chalet' },
-  { index: '2', property: 'Garaje' },
+  { id: '0', value: 'Piso' },
+  { id: '1', value: 'Chalet' },
+  { id: '2', value: 'Garaje' },
 ]
 
 export default rentalType
