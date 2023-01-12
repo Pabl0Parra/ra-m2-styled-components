@@ -11,6 +11,7 @@ const StyledSelect = styled.select`
   border: 1px solid ${colors.gray};
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
   padding-left: 0.8rem;
+  line-height: 2rem;
   appearance: none;
   &:focus {
     outline: none;
