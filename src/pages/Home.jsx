@@ -23,7 +23,7 @@ function Home() {
         <StyledMap
           style={{
             justifyContent: 'center',
-            margin: '1.75rem 2rem 3.3rem 0rem',
+            margin: '1.75rem 2rem 3.7rem 0rem',
             alignItems: 'center',
             border: '1px solid black',
             borderRadius: '0.5rem',
