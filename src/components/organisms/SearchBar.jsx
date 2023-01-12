@@ -9,12 +9,12 @@ export default function SearchBar() {
     <>
       <SelectGroup
         id="rentalType"
-        rentalType={rentalType}
+        options={rentalType}
         placeholder="Piso, chalet o garaje..."
       />
       <SelectGroup
         id="city"
-        city={city}
+        options={city}
         placeholder="Madrid, Barcelona o Zaragoza..."
       />
       <Button>
