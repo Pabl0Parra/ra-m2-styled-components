@@ -23,6 +23,9 @@ const StyledSelect = styled.select`
   }
 `
 
+// Los estilos de 21rem, 2.5rem por defecto no tienen mucho sentido.
+// Si los usas que vengan de styles/dimensions.js
+// Mejor aun, usar styled components en SearchBar para dar los estilos al select a ese nivel y no a nivel de atomo
 function Select({ text, width = '21rem', height = '2.5rem', id, children }) {
   return (
     <StyledSelect

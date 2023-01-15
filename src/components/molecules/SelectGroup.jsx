@@ -6,7 +6,9 @@ export default function SelectGroup({ id, options, placeholder }) {
   return (
     <>
       <Label htmlFor={id} />
+      {/* Faltan onChange, y otras props de Select */}
       <Select id={id}>
+        {/* Esta bien, pero las opciones bajalas a atoms y mapea dentro del select */}
         <option value="" hidden>
           {placeholder}
         </option>
