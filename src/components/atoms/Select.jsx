@@ -17,11 +17,10 @@ const StyledSelect = styled.select`
   &:focus {
     outline: none;
   }
-
-  option {
-    display: flex;
-    white-space: pre;
-  }
+`
+const StyledOption = styled.option`
+  display: flex;
+  white-space: pre;
 `
 
 function Select({ id, name, placeholder, onChange, options }) {
@@ -33,7 +32,7 @@ function Select({ id, name, placeholder, onChange, options }) {
       onChange={onChange}
     >
       {options.map((item) => (
-        <option key={item.id}>{item.value}</option>
+        <StyledOption key={item.id}>{item.value}</StyledOption>
       ))}
     </StyledSelect>
   )
