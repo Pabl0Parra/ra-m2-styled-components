@@ -1,18 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { colors } from '../../styles/index'
+import { colors } from '../../styles'
 
 const StyledSelect = styled.select`
   color: ${colors.black};
-  height: ${(props) => props.height};
-  width: ${(props) => props.width};
+  width: 21rem;
   border-radius: 0.313rem;
   border: 1px solid ${colors.gray};
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
   padding-left: 0.8rem;
   line-height: 2rem;
   appearance: none;
+  cursor: pointer;
+
   &:focus {
     outline: none;
   }
@@ -23,25 +24,28 @@ const StyledSelect = styled.select`
   }
 `
 
-function Select({ text, width = '21rem', height = '2.5rem', id, children }) {
+function Select({ id, name, placeholder, onChange, options }) {
   return (
     <StyledSelect
-      type="text"
-      width={width}
-      height={height}
-      name={id}
-      placeholder={text}
+      id={id}
+      name={name}
+      placeholder={placeholder}
+      onChange={onChange}
     >
-      {children}
+      {options.map((item) => (
+        <option key={item.id}>{item.value}</option>
+      ))}
     </StyledSelect>
   )
 }
 
 Select.propTypes = {
-  text: PropTypes.string,
-  width: PropTypes.number,
-  height: PropTypes.number,
   id: PropTypes.string,
-  children: PropTypes.node,
+  name: PropTypes.string,
+  options: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.string]),
+  ),
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func,
 }
 export default styled(Select)``
